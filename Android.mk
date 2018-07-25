@@ -20,5 +20,7 @@ include $(CLEAR_VARS)
 LOCAL_JAVA_LIBRARIES := org.apache.http.legacy
 LOCAL_SRC_FILES := $(call all-subdir-java-files)
 LOCAL_PACKAGE_NAME := OmniJaws
+LOCAL_CERTIFICATE := platform
+LOCAL_PRIVILEGED_MODULE := true
 LOCAL_MODULE_TAGS := optional
 include $(BUILD_PACKAGE)
